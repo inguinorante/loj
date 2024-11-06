@@ -14,13 +14,18 @@ body{
      z-index: 900;
 }
 .navbar ul{
-  margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
 .navbar li a{
     color: white;
     text-decoration: none;
+    margin-right: 50px;
 
 }
 
@@ -32,27 +37,42 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 32px;
+   
+    
 }
-.produto{
-    border: 1 px solid #ddd;
+.produto {
+    border: 1px solid #ddd;
     padding: 16px;
     text-align: center;
-    transform: (0.3) ease;
+    transition: 0.3s ease;
+    background-color: white;
+    border-radius: 8px;
+   box-shadow: 0 4px 6px black;
+
+}
+
+/* .produto2{
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    transition: 0.3s ease;
     background-color: white;
     border-radius: 8px;
 
-}
+} */
 
 .produto:hover{
     transform: scale(1.05);
     
 }
 
+
 .produto img{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 .whatsapp-button{
     position: fixed;
     bottom: 20px;
@@ -63,6 +83,8 @@ body{
     
 }
 
+
+
 .saiba-mais{
     background-color: #4caf50;
     border: none;
@@ -70,14 +92,14 @@ body{
     padding: 10px  20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3 ease
+    transition:  0.3 ease;
+    
 }
 
-.saiba-mais:hoover{
+.saiba-mais:hover{
     background-color: #45a049;
 }
